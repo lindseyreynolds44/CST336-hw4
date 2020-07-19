@@ -1,0 +1,124 @@
+
+/* --- Styling for whole site --- */
+
+header, nav, footer {
+    text-align: center;
+    font-family: 'Open Sans Condensed', cursive;
+}
+
+header {
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:5;
+    background-image: url("../img/sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    font-family: 'Open Sans Condensed', cursive;
+    width: 1000px;
+    position: relative;
+    top: 250px;
+    margin: auto; /* Makes all main content centered */
+}
+
+/* Title on each page */
+h1 {
+    font-size: 3em;
+    color: white;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+/* Background and text of each page */
+body {
+    color:black;
+    background-color:#D9DADC; /* light gray */
+    margin: auto; /* Makes header background color flush with edges */
+}
+
+/* Menu bar at the top of each page */
+nav {
+    background-color: #1F527E; /* Blue */
+    padding: 10px;
+}
+
+/* Links within "nav" container */
+nav a { 
+    padding:25px;
+    padding-bottom:4px;
+    font-size: 1.5em;
+    text-decoration: none;   /* removes underline */
+    color: white;            /* default links are blue */
+}
+
+/* Alter menu links for hover and current page */
+nav a:hover, .current { /* pseudo class */
+    font-size: 1.7em;
+    font-weight: bold;
+    background-color: #113758; /* Navy blue */
+    padding: 10px;
+}
+
+/* The main content of each page */
+.content {
+    font-size: 1.2em;
+    display: flex;
+    margin: 20px 20px;
+}
+
+/* Make image and text align on each page */
+figure {
+    padding-top: 10px;
+}
+
+/* --- Style for index.html --- */
+
+/* Emphasized content on the list in index.html */
+.list_item {
+    font-family: Lobster, cursive;
+}
+
+
+/* --- Style for references.html --- */
+
+.reference_content, .reference_content h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.reference_content a {
+    font-size:1.3em;
+    text-decoration: none; 
+    color: black;
+}
+
+.reference_content a:hover {
+    font-size:1.6em;
+    border-bottom:2px #1F527E solid;
+    color: black;
+}
+
+/* --- Style for footer --- */
+
+footer {
+    margin: 40px;
+    position: relative;
+    top:250px;
+}
+
+.footer_content {
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content figure {
+    margin: 0 20px;
+    padding: 0;
+}
