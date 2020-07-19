@@ -15,8 +15,16 @@
         <hr>
         
         <h2>Provided to You By:</h2>
-        <%- include('partials/provider.ejs') %> 
-        
+        <div>
+            <h3><%= companyName %></h3>
+            <em> "<%= catchPhrase %>" </em>
+            
+            <br><br>
+            
+            <img src="<%=image%>" alt="Business Image">
+            
+            <h4>Contact Us:</h4> <span> <%= email %> | <%= phoneNumber %> </span>
+        </div>
     </div>
 </main>
         
