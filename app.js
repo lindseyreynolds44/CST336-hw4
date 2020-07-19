@@ -8,19 +8,19 @@ const faker = require("faker");
 
 // Routes
 app.get("/", function(req, res){
-    res.render("index.html", {page_name: "index"});
+    res.render("index.ejs", {page_name: "index"});
 });
 
 app.get("/data", function(req, res){
-    res.render("data.html", {page_name: "data"});
+    res.render("data.ejs", {page_name: "data"});
 });
 
 app.get("/drug", function(req, res){
-    res.render("drug.html", {page_name: "drug"});
+    res.render("drug.ejs", {page_name: "drug"});
 });
 
 app.get("/patient", function(req, res){
-    res.render("patient.html", {page_name: "patient"});
+    res.render("patient.ejs", {page_name: "patient"});
 });
 
 app.get("/references", function(req, res){
@@ -33,7 +33,7 @@ app.get("/references", function(req, res){
         email: faker.internet.email(),
         phoneNumber: faker.phone.phoneNumber()
     }
-    res.render("references.html", data);
+    res.render("references.ejs", data);
 });
 
 // Listener - Starting the server
